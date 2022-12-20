@@ -4,66 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex</title>
+    <title>Form</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="flex-wrapper">
-      <header class="header">
-        <a href="./index.html" class="logo">logo</a>
-        <a href="tel:+380-1231212" class="phone">+380-1231212</a>
-        <nav class="nav">
-          <ul>
-            <li><a href="">page 1</a></li>
-            <li><a href="">page 2</a></li>
-            <li><a href="">page 3</a></li>
-            <li><a href="">page 4</a></li>
-            <li><a href="">page 5</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <section class="main__section">
-          <h1>title section</h1>
-          <div class="main__wrapper">
-            <article class="article">
-              <h2>title article</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                id quasi fugiat dicta earum reiciendis doloribus! Id eligendi
-                optio expedita maxime nemo repellat ad odit tenetur doloribus
-                incidunt! Voluptate consequatur accusantium odit, deleniti
-                quaerat, omnis dolor repellat neque rerum, optio ducimus amet?
-              </p>
-              <a href="">more</a>
-            </article>
-            <article class="article">
-              <h2>title article</h2>
-              <p>
-                Iste corrupti sint maiores omnis aspernatur aperiam laboriosam
-                quam repellat nostrum porro impedit officia, incidunt, accusamus
-                rerum. 
-              </p>
-              <a href="">more</a>
-            </article>
-            <article class="article">
-              <h2>title article</h2>
-              <p>
-                Voluptatibus animi eveniet, ratione numquam soluta quaerat quasi
-                explicabo odit quibusdam eos, ducimus mollitia, expedita dolorem
-                consequatur doloribus. Aliquid nam omnis amet! Inventore eius
-                voluptatibus similique consequuntur quaerat at, sit, nam
-                dignissimos illo necessitatibus cupiditate laudantium.
-                Reprehenderit provident perspiciatis tenetur sed sunt.
-              </p>
-              <a href="">more</a>
-            </article>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <p>&copy; 2022</p>
-      </footer>
-    </div>
+    <form action="" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="hidden" />
+      <input type="file" name="" id="" />
+      <input
+        type="number"
+        name="number"
+        min="5"
+        max="50"
+        step="3"
+        placeholder="5"
+      />
+      <input type="range" name="number" min="5" max="50" step="15" />
+      <fieldset>
+        <legend>Personal info</legend>
+        <input
+          type="text"
+          name="login"
+          placeholder="Your login"
+          autofocus
+          required
+        />
+        <!-- pattern="^[a-z0-9_-]{3,15}$" -->
+        <label for="password">Your password</label>
+        <input type="password" name="password" id="password" />
+
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" autocomplete="email" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Message</legend>
+        <label for="message">Your message</label>
+        <textarea name="message" id="message" placeholder="message"></textarea>
+        <select name="drinks" id="" multiple size="2">
+          <optgroup label="drinks">
+            <option value="tea1">tea1</option>
+            <option value="tea2">tea2</option>
+            <option value="tea3" selected>tea3</option>
+            <option value="tea1">tea1</option>
+            <option value="tea2">tea2</option>
+            <option value="tea3">tea3</option>
+            <option value="tea1">tea1</option>
+            <option value="tea2">tea2</option>
+            <option value="tea3">tea3</option>
+          </optgroup>
+        </select>
+        <label>
+          town
+          <datalist id="town-list">
+            <option value="Dnipro">
+            <option value="Doneck">
+              <option value="Dnistro">
+          </datalist>
+
+          <input type="text" name="town" placeholder="town" list="town-list" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <label>
+          PHP
+          <input type="checkbox" name="lang" value="PHP" />
+        </label>
+        <label>
+          JS
+          <input type="checkbox" name="lang" value="JS" checked />
+        </label>
+        <label>
+          Python
+          <input type="checkbox" name="lang" value="Python" disabled />
+        </label>
+        <label>
+          Agree
+          <input type="checkbox" name="argee" required />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Radio</legend>
+        <label>
+          red
+          <input type="radio" name="color" value="red" />
+        </label>
+        <label>
+          green
+          <input type="radio" name="color" value="green" />
+        </label>
+        <label>
+          blue
+          <input type="radio" name="color" value="blue" checked />
+        </label>
+      </fieldset>
+      <div class="btn-wrapper">
+        <!-- <input type="submit" value="send"> -->
+        <!-- <input type="reset" value="reset"> -->
+        <button type="submit">send</button>
+        <button type="reset">reset</button>
+      </div>
+    </form>
   </body>
 </html>
