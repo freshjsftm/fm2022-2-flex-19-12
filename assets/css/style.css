@@ -1,61 +1,9 @@
-:root {
-  --padding-size: 5px;
+@charset "utf-8";
+/* @import './reset.css';
+@import url(./reset.css); 
+@import url(./font.css);
+@import url(./print.css) print;
+@import url(./screen.css) screen;*/
+@import url(./common.css) all;
 
-  font-size: 18px;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-img {
-  width: 100%;
-}
-a {
-  color: inherit;
 
-  text-decoration: none;
-}
-form{
-  width: 50%;
-  min-width: 350px;
-  margin: auto;
-}
-fieldset,
-.btn-wrapper{
-  display: flex;
-  flex-direction: column;
-}
-input, 
-button,
-label,
-legend{
-  padding: var(--padding-size);
-  margin: var(--padding-size);
-}
-::placeholder {
-  color: blue;
-  font-size: 0.8em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-input[type="checkbox"]{
-  /* display: none; */
-  /* opacity: 0; */
-  visibility: hidden;
-}
-input[type="checkbox"]::before{
-  /* opacity: 1; */
-  content: '-';
-  display: block;
-  width: 20px;
-  height: 30px;
-  visibility: visible;
-  transform: translateY(-5px);
-}
-input[type="checkbox"]:checked::before{
-  content: '+';
-}
-input[type="checkbox"]:disabled::before{
-  content: 'x';
-}

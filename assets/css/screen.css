@@ -1,0 +1,15 @@
+h1 {
+  color:aqua;
+  font-size: 3.5rem;
+  font-family: "Passions Conflict", cursive;
+}
+h2{
+  color: firebrick;
+  font-size: 2rem;
+}
+p {
+  color: #aaa;
+  font-family: "Chivo Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}

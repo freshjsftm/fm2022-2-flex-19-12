@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Passions Conflict";
+  src: url(./../fonts/Passions_Conflict/PassionsConflict-Regular.ttf)
+    format("opentype");
+}
+@font-face {
+  font-family: "Chivo Mono";
+  src: url(./../fonts/Chivo_Mono/ChivoMono-BoldItalic.ttf) format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Chivo Mono";
+  src: url(./../fonts/Chivo_Mono/ChivoMono-Bold.ttf) format("opentype");
+  font-weight: 700;
+}
+

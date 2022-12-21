@@ -5,109 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="shortcut icon" href="./favicon256.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon256.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/print.css" media="print" />
+    <link rel="stylesheet" href="./assets/css/screen.css" media="screen" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <form action="" method="post" enctype="multipart/form-data">
-      <fieldset>
-        <legend>Checkboxes</legend>
-        <label>
-          PHP
-          <input type="checkbox" name="lang" value="PHP" />
-        </label>
-        <label>
-          JS
-          <input type="checkbox" name="lang" value="JS" checked />
-        </label>
-        <label>
-          Python
-          <input type="checkbox" name="lang" value="Python" disabled />
-        </label>
-        <label>
-          Agree
-          <input type="checkbox" name="argee" required />
-        </label>
-      </fieldset>
-      <input type="hidden" name="hidden" />
-      <input type="file" name="" id="" />
-      <input
-        type="number"
-        name="number"
-        min="5"
-        max="50"
-        step="3"
-        placeholder="5"
-      />
-      <input type="range" name="number" min="5" max="50" step="15" />
-      <fieldset>
-        <legend>Personal info</legend>
-        <input
-          type="text"
-          name="login"
-          placeholder="Your login"
-          autofocus
-          required
-        />
-        <!-- pattern="^[a-z0-9_-]{3,15}$" -->
-        <label for="password">Your password</label>
-        <input type="password" name="password" id="password" />
-
-        <label>
-          <span>Your email</span>
-          <input type="email" name="email" autocomplete="email" />
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Message</legend>
-        <label for="message">Your message</label>
-        <textarea name="message" id="message" placeholder="message"></textarea>
-        <select name="drinks" id="" multiple size="2">
-          <optgroup label="drinks">
-            <option value="tea1">tea1</option>
-            <option value="tea2">tea2</option>
-            <option value="tea3" selected>tea3</option>
-            <option value="tea1">tea1</option>
-            <option value="tea2">tea2</option>
-            <option value="tea3">tea3</option>
-            <option value="tea1">tea1</option>
-            <option value="tea2">tea2</option>
-            <option value="tea3">tea3</option>
-          </optgroup>
-        </select>
-        <label>
-          town
-          <datalist id="town-list">
-            <option value="Dnipro">
-            <option value="Doneck">
-              <option value="Dnistro">
-          </datalist>
-
-          <input type="text" name="town" placeholder="town" list="town-list" />
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Radio</legend>
-        <label>
-          red
-          <input type="radio" name="color" value="red" />
-        </label>
-        <label>
-          green
-          <input type="radio" name="color" value="green" />
-        </label>
-        <label>
-          blue
-          <input type="radio" name="color" value="blue" checked />
-        </label>
-      </fieldset>
-      <div class="btn-wrapper">
-        <!-- <input type="submit" value="send"> -->
-        <!-- <input type="reset" value="reset"> -->
-        <button type="submit">send</button>
-        <button type="reset">reset</button>
-      </div>
-    </form>
+    <article>
+      <h1>title article</h1>
+      <h2>title h2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum odit
+        dolor ad voluptates repellat ullam repudiandae nostrum, vel nisi
+        mollitia ducimus perferendis perspiciatis deleniti illo accusamus
+        voluptate soluta. Obcaecati enim eos laborum voluptates maxime dolorem
+        cum est, dicta temporibus, repudiandae eum explicabo labore aliquid
+        expedita, ipsa nobis dolore nam odio!
+      </p>
+    </article>
   </body>
 </html>
