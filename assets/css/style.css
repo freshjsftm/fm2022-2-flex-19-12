@@ -39,3 +39,23 @@ legend{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+input[type="checkbox"]{
+  /* display: none; */
+  /* opacity: 0; */
+  visibility: hidden;
+}
+input[type="checkbox"]::before{
+  /* opacity: 1; */
+  content: '-';
+  display: block;
+  width: 20px;
+  height: 30px;
+  visibility: visible;
+  transform: translateY(-5px);
+}
+input[type="checkbox"]:checked::before{
+  content: '+';
+}
+input[type="checkbox"]:disabled::before{
+  content: 'x';
+}

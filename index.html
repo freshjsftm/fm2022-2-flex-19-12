@@ -9,6 +9,25 @@
   </head>
   <body>
     <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <label>
+          PHP
+          <input type="checkbox" name="lang" value="PHP" />
+        </label>
+        <label>
+          JS
+          <input type="checkbox" name="lang" value="JS" checked />
+        </label>
+        <label>
+          Python
+          <input type="checkbox" name="lang" value="Python" disabled />
+        </label>
+        <label>
+          Agree
+          <input type="checkbox" name="argee" required />
+        </label>
+      </fieldset>
       <input type="hidden" name="hidden" />
       <input type="file" name="" id="" />
       <input
@@ -66,25 +85,7 @@
           <input type="text" name="town" placeholder="town" list="town-list" />
         </label>
       </fieldset>
-      <fieldset>
-        <legend>Checkboxes</legend>
-        <label>
-          PHP
-          <input type="checkbox" name="lang" value="PHP" />
-        </label>
-        <label>
-          JS
-          <input type="checkbox" name="lang" value="JS" checked />
-        </label>
-        <label>
-          Python
-          <input type="checkbox" name="lang" value="Python" disabled />
-        </label>
-        <label>
-          Agree
-          <input type="checkbox" name="argee" required />
-        </label>
-      </fieldset>
+
       <fieldset>
         <legend>Radio</legend>
         <label>
