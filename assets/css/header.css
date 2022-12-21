@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: aliceblue;
+}
+.logo {
+  color: teal;
+  font-family: "Passions Conflict";
+  font-size: 4rem;
+}
+.phone {
+  color: teal;
+  font-family: "Passions Conflict";
+  font-size: 2rem;
+}
+.reclama {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .header {
+    background-color: fuchsia;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-color: greenyellow;
+  }
+  .reclama {
+    --height: 10vh;
+    display: block;
+    width: calc(var(--height)/9*13);
+    height: var(--height);
+    border: 5px solid teal;
+    background-image: url("./../images/shutterstock_2132466789\ [Converted].png");
+    background-size: cover;
+  }
+}
+
+@media print {
+  .logo,
+  .phone {
+    font-family: initial;
+    font-size: initial;
+  }
+  .reclama{
+    display: none;
+  }
+}
