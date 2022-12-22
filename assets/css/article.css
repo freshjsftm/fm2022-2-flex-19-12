@@ -1,5 +1,4 @@
-.youtube{
-  display: block;
-  width: 50%;
-  margin:  auto;
+.article__img{
+  width: 70%;
+  object-fit: cover;
 }
